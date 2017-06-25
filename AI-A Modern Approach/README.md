@@ -6,8 +6,8 @@
 
 Four kinds definition of AI
 
-|                  |                    |
-|------------------|--------------------|
+|                  |                     |
+|------------------|---------------------|
 | Thinking Humanly | Thinking Rationally |
 | Acting Humanly   | Acting Rationally   |
 
@@ -147,4 +147,275 @@ Four kinds definition of AI
 
         Decision theory
 
+        Game theory        
+
     * How should we do this when the payoff may be far in the future?
+
+        operations research
+
+        Markov decision processes
+
+        satisficing
+
+1. Neuroscience
+
+    * How do brains process information?
+
+        Broca’s area, neurons, EEG, fMRI
+
+        mysticism
+
+1. Psychology
+
+    * How do humans and animals think and act?
+
+        * Behaviorism
+
+        * Cognitive Psychology
+
+            three key steps of a knowledge-based agent:
+
+            1. the stimulus must be translated into an internal representation
+
+            1. the representation is manipulated by cognitive processes to derive new internal representations
+
+            1. these are in turn retranslated back into action
+
+            | Paper | Author | Part of cognitive psychology |
+            |-------|--------|------------------------------|
+            | *The Magic Number Seven*   | George Miller               | memory           |
+            | *Three Models of Language* | Noam Chomsky                | logical thinking |
+            | *The Logic Theory Machine* | Allen Newell, Herbert Simon | language         |
+
+1. Computer engineering
+
+    * How can we build an efficient computer?
+
+        automated machine
+
+        programmable machine - a loom
+
+        Analytical Engine
+
+        electronic computer
+
+        massive parallelism
+
+1. Control theory and cybernetics
+
+    * How can artifacts operate under their own control?
+
+        water clock, steam engine governer, thermostat, submarine
+
+        stable feedback system
+
+        control theory
+
+        homeostatic devices
+
+        stochastic optimal control
+
+1. Linguistics
+
+     * How does language relate to thought?
+
+     computational linguistics / natural language processing
+
+     knowledge representation
+·
+### The History of artificial Intelligence
+
+1. The gestation of artificial intelligence (1943–1955)
+
+    *  Warren McCulloch and Walter Pitts's model of artificial neurons based on:
+        * knowledge of the basic physiology and function of neurons in the brain
+
+        * a formal analysis of propositional logic due to Russell and Whitehead
+
+        * Turing’s theory of computation.
+
+    * Hebbian learning
+
+    * Marvin Minsky and Dean Edmonds's neural network
+
+    * Alan Turing’s vision:
+
+        * Turing Test
+
+        * machine learning
+
+        * genetic algorithms
+
+        * reinforcement learning
+
+        * the Child Programme idea
+
+1. The birth of artificial intelligence (1956)
+
+    * Dartmouth workshop (2 month, 10 man)
+
+    * Logic Theorist (LT)
+
+    * **Why it was necessary for AI to become a separate field.?**
+
+        * The first answer is that AI from the start embraced the idea of duplicating human faculties such as creativity, self-improvement, and language use.
+
+        * The second answer is methodology. AI is the only one of these fields that is clearly a branch of computer science (although operations research does share an emphasis on computer simulations), and AI is the only field to attempt to build machines that will function autonomously in complex, changing environments.
+
+1. Early enthusiasm, great expectations (1952–1969)
+
+    * General Problem Solver
+
+    * Physical symbol system hypothesis
+
+    * Geometry Theorem Prover
+
+    * Advice Taker
+
+    * Question-answering and planning systems
+
+    * Shakey robotics project
+
+    * SAINT program, ANALOGY program, STUDENT program
+
+    * adalines, perceptrons, perceptron convergence theorem
+
+1. A dose of reality (1966–1973)
+
+    *  Machine translation
+
+    * intractability
+
+    * fundamental limitations
+
+1. Knowledge-based systems: The key to power? (1969–1979)
+
+    * DENDRAL program
+
+    * Heuristic Programming Project (HPP)
+
+    * expert system
+
+    * Medical diagnosis / MYCIN
+
+    * understanding natural language on knowledge
+
+    * representation and reasoning languages
+
+1. AI becomes an industry (1980–present)
+
+    *  expert system, R1, Digital Equipment Corporation (DEC)
+
+    * Fifth Generation (Japan)
+
+    * Microelectronics and Computer Technology Corporation (MCC) (U.S.)
+
+    * Intelligent Knowledge-Based Systems(IKBS, Britain)
+
+1. The return of neural networks (1986–present)
+
+    * back-propagation learning algorithm
+
+    * connectionist model
+
+    * modern neural networks, separated into two fields:
+
+        * creating effective network architectures and algorithms and understanding their mathematical properties
+
+        * the other concerned with careful modeling of the empirical properties of actual neurons and ensembles of neurons
+
+1. AI adopts the scientific method (1987–present)
+
+    **In terms of methodology, AI has finally come firmly under the scientific method.**
+
+    * Speech recognition - hidden Markov models (HMMs)
+
+    * Machine translation
+
+    * Neural network -> data mining
+
+    * Bayesian network formalism
+
+    * normative expert systems
+
+* The emergence of intelligent agents (1995–present)
+
+    * search engines
+
+    * recommender systems
+
+    * Web site aggregators
+
+     * driving a car
+
+     * playing chess
+
+     * recognizing speech
+
+     * human-level AI(HLAI)
+
+     * Artificial General Intelligence(AGI)
+
+ 1. The availability of very large data sets (2001–present)
+
+    **But some recent work in AI suggests that for many problems, it makes more sense to worry about the data and be less picky about what algorithm to apply.**
+
+### The state of the art
+
+* Robotic vehicles
+
+* Speech recognition
+
+* Autonomous planning and scheduling
+
+    Remote Agent / MAPGEN / MEXAR2
+
+* Game playing
+
+    DEEP BLUE
+
+* Spam fighting
+
+* Logistics planning
+
+    Dynamic Analysis and Replanning Tool, DART
+
+* Robotics
+
+    robotic vacuum cleaners, PackBot
+
+* Machine Translation
+
+### Summary
+
+See notes above or the book.
+
+### Bibliographical notes
+
+The major AI conferences:
+
+* the biennial International Joint Conference on AI (IJCAI)
+
+* the annual European Conference on AI (ECAI)
+
+* the National Conference on AI (AAAI)
+
+The major journals for general AI:
+
+* *Artificial Intelligence*
+
+* *Computational Intelligence*
+
+* *IEEE Transactions on Pattern Analysis and Machine Intelligence*
+
+* *IEEE Intelligent Systems*
+
+* *Journal of Artificial Intelligence Research* (electronic)
+
+The main professional societies for AI:
+
+* American Association for Artificial Intelligence (AAAI)
+
+* ACM Special Interest Group in Artificial Intelligence (SIGART)
+
+* Society for Artificial Intelligence and Simulation of Behaviour (AISB)
