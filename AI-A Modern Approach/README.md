@@ -338,7 +338,7 @@ Four kinds definition of AI
 
     * normative expert systems
 
-* The emergence of intelligent agents (1995–present)
+1. The emergence of intelligent agents (1995–present)
 
     * search engines
 
@@ -419,3 +419,143 @@ The main professional societies for AI:
 * ACM Special Interest Group in Artificial Intelligence (SIGART)
 
 * Society for Artificial Intelligence and Simulation of Behaviour (AISB)
+
+---
+
+## 1. Intelligent Agents
+
+### Agents and Environments
+
+* agent
+
+* environment
+
+* sensors
+
+* actuators
+
+* agent function, agent program
+
+### Good beahavior: the concept of rationality
+
+* performance measurement
+
+    1. This notion of desirability is captured by a performance measure that
+    evaluates any given sequence of **environment states**.
+
+    1. As a general rule, it is better to design performance measures according to what one actually wants in the environment, rather than according to how one thinks the agent should behave.
+
+* rationality
+
+    For each possible percept sequence, a **rational agent** should select an action that is expected to **maximize its performance measure**, given the evidence **provided by the percept sequence** and whatever **built-in knowledge** the agent has.
+
+* Omniscience, learning, and autonomy
+
+     Rationality maximizes expected performance, while perfection maximizes actual performance.
+
+     **After sufficient experience of its environment, the behavior of a rational agent can become effectively independent of its prior knowledge.**
+
+### The nature of environments
+
+* Test environment = PEAS (Performance, Environment, Actuators, Sensors)
+
+* Properties of task environments
+
+    1. Fully observable vs. partially observable
+
+    1. Single agent vs. multiagent
+
+        The key distinction of whether B is a agent or not is whether B’s behavior is best described as maximizing a performance measure whose value depends on agent A’s behavior.
+
+        * competitive multiagent environment
+
+        * cooperative multiagent environment.
+
+    1. Deterministic vs. stochastic
+
+        An environment is uncertain if it is not fully observable or not deterministic.
+
+    1. Episodic vs. sequential
+
+    1. Static vs. dynamic
+
+    1. Discrete vs. continuous
+
+    1. Known vs. unknown
+
+### The structure of agents
+
+* *agent = architecture + program*
+
+* agent program
+
+    The difference between the **agent program**, which takes the current percept as input, and the **agent function**, which takes the entire percept history.
+
+    Four basic kinds of agent programs:
+
+    * **Simple reflex agents**
+
+        Simple reflex agents select actions on the basis of the current percept, ignoring the rest of the percept history.
+
+        ![simple-reflex-aget](images/simple-reflex-aget.png)
+
+    * **Model-based reflex agents**
+
+        ![model-based-agent](images/model-based-agent.png)
+
+    * **Goal-based agents**
+
+        ![goal-based-agent](images/goal-based-agent.png)
+
+    * **Utility-based agents**
+
+        ![utility-based-agent](images/utility-based-agent.png)
+
+    * **Learning agents**
+
+        ![learning-agent](images/learning-agent.png)
+
+        A learning agent can be divided into four conceptual components:
+
+        * problem generator
+        * learning element
+        * performance element
+        * critic
+
+* How the components of agent programs work
+
+    The components of agent can represent the environment in three ways:
+
+    * atomic
+
+        * search and game-playing
+
+        * Hidden Markov models
+
+        * Markov decision processes
+
+    * factored
+
+        * constraint satisfaction
+
+        * propositional logic
+
+        * planning
+
+        * Bayesian networks
+
+        * machine learning
+
+    * structured
+
+        * relational databases
+
+        * first-order logic
+
+        * first-order probability models
+
+        * knowledge-based learning
+
+        * natural language understanding
+
+---
