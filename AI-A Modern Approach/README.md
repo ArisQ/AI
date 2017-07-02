@@ -422,7 +422,7 @@ The main professional societies for AI:
 
 ---
 
-## 1. Intelligent Agents
+## 2. Intelligent Agents
 
 ### Agents and Environments
 
@@ -559,3 +559,59 @@ The main professional societies for AI:
         * natural language understanding
 
 ---
+
+## Solving problems by searching
+
+Problem-solving agent is a kind of goal-based agent, and uses atomic representations.
+
+* Problem-solving agents
+
+    * Goal formulation
+
+        Goal formulation, based on the current situation and the agent’s performance measure, is the first step in problem solving. A goal is  considered to be **a set of world states**.
+
+    * Problem formulation
+
+        Problem formulation is the process of deciding what actions and states to consider, given a goal.
+
+    * the environment
+
+        * observable
+
+        * discrete
+
+        * Known
+
+        * deterministic
+
+    * search / solution / execution
+
+    * problems can be defined by five components:
+
+        * initial states
+
+            *In(Arad)*
+
+        * possible actions
+
+            *{ Go(Sibiu), Go(Timisoara), Go(Zerind)}*
+
+        * transition modeling
+
+            *RESULT( In(Arad), Go(Zerind)) = In(Zerind)*
+
+            **successor**
+
+        The initial state, actions, and transition model implicitly define the **state space** of the problem
+
+        * goal test
+
+            The goal of this example is *{In(Bucharest)}*.
+
+        * path cost
+
+            The **step cost** of taking action a in state *s* to reach state *``s'``* is denoted by *c(s, a, s')*.
+
+            **optimal solution**
+
+### Example problems
