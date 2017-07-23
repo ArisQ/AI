@@ -560,58 +560,194 @@ The main professional societies for AI:
 
 ---
 
-## Solving problems by searching
+## 3. Solving problems by searching
 
 Problem-solving agent is a kind of goal-based agent, and uses atomic representations.
 
-* Problem-solving agents
+### Problem-solving agents
 
-    * Goal formulation
+* Goal formulation
 
-        Goal formulation, based on the current situation and the agent’s performance measure, is the first step in problem solving. A goal is  considered to be **a set of world states**.
+    Goal formulation, based on the current situation and the agent’s performance measure, is the first step in problem solving. A goal is  considered to be **a set of world states**.
 
-    * Problem formulation
+* Problem formulation
 
-        Problem formulation is the process of deciding what actions and states to consider, given a goal.
+    Problem formulation is the process of deciding what actions and states to consider, given a goal.
 
-    * the environment
+* the environment
 
-        * observable
+    * observable
 
-        * discrete
+    * discrete
 
-        * Known
+    * Known
 
-        * deterministic
+    * deterministic
 
-    * search / solution / execution
+* search / solution / execution
 
-    * problems can be defined by five components:
+* problems can be defined by five components:
 
-        * initial states
+    * initial states
 
-            *In(Arad)*
+        *In(Arad)*
 
-        * possible actions
+    * possible actions
 
-            *{ Go(Sibiu), Go(Timisoara), Go(Zerind)}*
+        *{ Go(Sibiu), Go(Timisoara), Go(Zerind)}*
 
-        * transition modeling
+    * transition modeling
 
-            *RESULT( In(Arad), Go(Zerind)) = In(Zerind)*
+        *RESULT( In(Arad), Go(Zerind)) = In(Zerind)*
 
-            **successor**
+        **successor**
 
-        The initial state, actions, and transition model implicitly define the **state space** of the problem
+    The initial state, actions, and transition model implicitly define the **state space** of the problem
 
-        * goal test
+    * goal test
 
-            The goal of this example is *{In(Bucharest)}*.
+        The goal of this example is *{In(Bucharest)}*.
 
-        * path cost
+    * path cost
 
-            The **step cost** of taking action a in state *s* to reach state *``s'``* is denoted by *c(s, a, s')*.
+        The **step cost** of taking action a in state *s* to reach state *``s'``* is denoted by *c(s, a, s')*.
 
-            **optimal solution**
+        **optimal solution**
 
 ### Example problems
+
+Toy examples:
+
+* Vacuum world
+
+* 8-puzzle
+
+* 8-queens problem
+
+    * incremental formulation
+
+    * complete-state formulation
+
+Real-world problems:
+
+* route-finding problem
+
+* touring problem
+
+    * traveling salesperson problem (TSP)
+
+* VLSI layout problem
+
+    * cell layout
+
+    * channel routing
+
+* robot navigation
+
+* automatic assembly sequencing
+
+* protein design (another assembly problem)
+
+### Searching for solutions
+
+* searching tree
+
+    * root -- initial state
+
+    * branches -- actions
+
+    * nodes -- states
+
+    * expanding
+
+    * generating
+
+    * leaf nodes
+
+    * frontier (or open list which is not accurate)
+
+    * repeated state, loopy path
+
+* TREE-SEARCH algorithm
+
+* search strategy
+
+* loopy path, redundant paths
+
+* GRATH-SEARCH algorithm
+
+    * explored set (or closed list)
+
+    * Separation property
+
+* infrastruture for search algorithms
+
+    * four components of the structure of tree node
+
+        * state
+
+        * parent
+
+        * action
+
+        * path-cost
+
+    * CHILD-NODE function
+
+    * SOLUTION function
+
+    * frontier structure
+
+        The appropriate data structure for frontier is a **queue**.
+
+        * EMPTY?(queue)
+
+        * POP(queue)
+
+        * INSERT(element,queue)
+
+        * queue variants
+
+            * FIFO queue / first in, first-out
+
+            * LIFO queue / last-in, first-out / stack
+
+            * priority queue
+
+        * explored set
+
+            The explored set can be implemented with a **hash table** to allow efficient checking for repeated states.
+
+            * insert
+
+            * lookup
+
+* Measuring problem-solving performance
+
+    * We can evaluate an algorithm’s performance in four ways:
+
+        * Completeness
+
+        * Optimality
+
+        * Time complexity
+
+        * Space complexity
+
+    * complexity / problem difficulty
+
+        * the theoretical computer science ways
+
+            the size of the state space graph, |V|+|E|, where V is the set of vertices (nodes) of the graph and E is the set of edges (links).
+
+        * the AI way
+
+            * *b*, **branching factor**
+
+            * *d*, **depth**
+
+            * *m*, the maximum length of an path in the state space
+
+        * Time is often measured in terms of the number of nodes generated during the search, and space in terms of the maximum number of nodes stored in memory.
+
+    * search cost
