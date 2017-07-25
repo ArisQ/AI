@@ -7,7 +7,7 @@
 Four kinds definition of AI
 
 |                  |                     |
-|------------------|---------------------|
+|:-----------------|:--------------------|
 | Thinking Humanly | Thinking Rationally |
 | Acting Humanly   | Acting Rationally   |
 
@@ -751,3 +751,107 @@ Real-world problems:
         * Time is often measured in terms of the number of nodes generated during the search, and space in terms of the maximum number of nodes stored in memory.
 
     * search cost
+
+    * total cost
+
+### Uninformed search strategies
+
+* Breadth-first search
+
+   * Breadth-first search is a simple strategy in which the root node is expanded first, then all the successors of the root node are expanded next, then their successors, and so on.
+
+   * use a FIFO queue for the frontier
+
+   * **the goal test is applied to each node when it is generated** rather than when it is selected for expansion.
+
+   * pseudo code
+
+        ![pseudocode for breadth-first search](images/breadth-first-search.png)
+
+    * performance
+
+        * is complete if the shallowest goal node is at some finite depth d.
+
+        * is optimal if **the path cost is a nondecreasing function of the depth of the node.**
+
+        * total number of nodes generated at depth *d* where every state has *b* successors is:
+
+            $$b+b^2+b^3+...+b^d=O(b^d)$$
+
+        * There will be $O(b^{d-1})$ nodes in the explored set and $O(b^d)$ nodes in the frontier, so the space complexity is $O(b^d)$.
+
+* uniform-cost search
+
+    * uniform-cost search expands the node *n* with the *lowest path cost g(n)*.
+
+    * use a priority queue ordered by *g* for the frontier.
+
+    * the goal test is applied to a node when it is selected for expansion
+
+    * uniform-cost search expands nodes in order of their optimal path cost
+
+    * pseudocode
+
+        ![pseudocode for uniform-cost search](images/uniform-cost-search.png)
+
+    * performance
+
+        * Completeness is guaranteed provided the cost of every step exceeds some small positive constant $\epsilon$
+
+        * The worst-case time and space complexity is $O(b^{1+\lfloor C^* /\epsilon\rfloor})$
+
+* depth-first search
+
+    * use a LIFO queue as the frontier
+
+    * performance
+
+        * completeness
+
+            * finite state space
+
+                * using the graph-search is complete
+
+                * using the tree-search version is not complete
+
+            * In infinite state space, both are not complete if  an infinite non-goal path is encountered
+
+        * is nonoptimal
+
+        * The time complexity is $O(b^m)$, where $m$ is the maxium depth of any node. *infinite* if the tree is unbounded.
+
+        * The space complexity is $O(bm)$
+
+        * backtracking search
+
+* depth-limited search
+
+    * time complexity is $O(b^l)$, space complexity is $O(bl)$, where $l$ is the predetermined depth limit.
+
+    * the **diameter** of the state space
+
+* iterative deepening depth-first search
+
+    * The space complexity is $O(bd)$
+
+    * complete when the branching factor is finite
+
+    * optimal when the path cost is a nondecreasing function of the depth of the node
+
+    * The total number of nodes generated in the worst case is
+    $$N(IDS) = (d)b + (d-1)b^2+...+ (1)b^d$$
+
+
+    * **In general, iterative deepening is the preferred uninformed search method when the search space is large and the depth of the solution is not known.**
+
+    * a hybrid approach
+
+* bidirectional search
+
+    * Both the time complexity and space complexity is $O(b^{d/2})$
+
+    * This **space requirement** is the most significant **weakness** of bidirectional search.
+
+* comparing uninformed search strategies
+
+    ![comparison for uninformed search](images/comparison-for-uninformed-search.png)
